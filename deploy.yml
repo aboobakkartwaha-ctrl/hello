@@ -4,6 +4,7 @@
     - name: create_dir
       file:
         path: /var/jenkins_home/deploy
+        state: directory
         mode: '0755'
     - name: copy
       copy:
