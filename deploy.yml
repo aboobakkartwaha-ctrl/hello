@@ -1,0 +1,11 @@
+- name: deploy_art
+  hosts: web
+  tasks:
+    - name: create_dir
+    file:
+      path: /var/jenkins_home/deploy
+      mode: '0755'
+    - name: copy
+    copy:
+      src: target/app-1.0-SNAPSHOT.jar
+      dest: /var/jenkins_home/deploy/jenkins-ansible.jar
