@@ -8,5 +8,5 @@
         mode: '0755'
     - name: copy
       copy:
-        src: target/app-1.0-SNAPSHOT.jar
+        src: app/target/app-1.0-SNAPSHOT.jar
         dest: /var/jenkins_home/deploy/jenkins-ansible.jar
